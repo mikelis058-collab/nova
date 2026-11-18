@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "halo",
+  "version": "${version}",
+  "name": "Halo Client",
+  "description": "A smooth, visual-focused client mod with a glass HUD and a bunch of modules.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": { "client": ["dev.halo.HaloClient"] },
+  "mixins": [ { "config": "halo.mixins.json", "environment": "client" } ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
